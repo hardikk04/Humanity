@@ -73,11 +73,11 @@ gsap.to(".page2>h1>span", {
   scrollTrigger: {
     trigger: ".page2>h1>span",
     scroller: ".main",
-    start: "top bottom",
-    end: "bottom 40%",
+    start: "top 70%",
+    end: "bottom 10%",
     scrub: 0.5,
+    // markers: true,
   },
   stagger: 0.2,
   color: "#fff",
 });
-
