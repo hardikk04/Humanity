@@ -69,7 +69,9 @@ document.querySelectorAll(".page2>h1>span").forEach((dets) => {
   dets.style.color = "#dadada69";
 });
 
-gsap.to(".page2>h1>span", {
+t1.to(".page2>h1>span", {
+  stagger: 0.1,
+  color: "#fff",
   scrollTrigger: {
     trigger: ".page2>h1>span",
     scroller: ".main",
@@ -78,6 +80,42 @@ gsap.to(".page2>h1>span", {
     scrub: 0.5,
     // markers: true,
   },
-  stagger: 0.2,
+});
+
+t1.to(".page5-bg>img", {
+  filter: "invert(100%)",
+  scrollTrigger: {
+    trigger: ".page5",
+    scroller: ".main",
+    start: "top 20%",
+    end: "top -10%",
+    scrub: 1,
+    // markers: true,
+  },
+});
+
+let clutter2 = "";
+document
+  .querySelector(".page5-part2>h1")
+  .textContent.split(" ")
+  .forEach((dets) => {
+    clutter2 += `<span> ${dets} </span>`;
+    document.querySelector(".page5-part2>h1").innerHTML = clutter2;
+  });
+
+document.querySelectorAll(".page5-part2>h1>span").forEach((dets) => {
+  dets.style.color = "#dadada69";
+});
+
+t1.to(".page5-part2>h1>span", {
   color: "#fff",
+  stagger: 0.5,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page5-part2>h1>span",
+    start: "top 90%",
+    end: "bottom 40%",
+    scrub: 0.5,
+    // markers: true,
+  },
 });

@@ -254,6 +254,102 @@ nav > i {
 
 .page5 {
   position: relative;
-  height: 200vh;
+  height: 220vh;
   width: 100%;
+}
+
+.page5-part1 {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  padding-top: 6vw;
+  padding-right: 4vw;
+  display: flex;
+  justify-content: end;
+}
+
+.page5-part1-dets {
+  position: relative;
+  /* background-color: salmon; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page5-part1-dets > h1 {
+  font-weight: 400;
+  font-size: 4vw;
+  width: 70%;
+  line-height: 1;
+}
+
+.page5-part1-dets-box > h3 {
+  font-size: 2.3vw;
+  font-weight: 400;
+  margin-bottom: 1vw;
+}
+
+.page5-line {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  /* margin-top: 1vw; */
+}
+
+.dets-part {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.dets-part > h1 {
+  font-weight: 400;
+  font-size: 5vw;
+}
+
+.dets-part > h3 {
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 1;
+}
+
+.page5-part2 {
+  position: relative;
+  height: 50%;
+  width: 60%;
+  display: flex;
+  align-items: end;
+  padding: 2vw;
+  padding-bottom: 6vw;
+}
+
+.page5-part2 > h1 {
+  font-weight: 400;
+  font-size: 4vw;
+  line-height: 0.9;
+}
+
+.page5-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(20px);
+}
+
+.page5-bg > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.page6 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #20282e;
 }
