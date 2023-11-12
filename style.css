@@ -350,7 +350,7 @@ nav > i {
 .page6 {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #20282e;
   padding: 1.5vw;
 }
@@ -394,6 +394,83 @@ nav > i {
 }
 
 .page6-dets i {
-  /* opacity: 0; */
+  opacity: 0;
   font-size: 1.4vw;
+  transition: all ease 0.3s;
+}
+
+.page6-dets:hover i {
+  opacity: 1;
+}
+
+.page7 {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  /* background-color: salmon; */
+  padding: 1.5vw;
+  padding-top: 8vw;
+}
+
+.page7-box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page7-box > .page7-elem:nth-child(1) {
+  width: 35%;
+}
+
+.page7-elem > h1 {
+  font-weight: 400;
+  /* width: 45%; */
+  line-height: 1;
+  font-size: 1.5vw;
+}
+
+.email {
+  margin-top: 4vw;
+  position: relative;
+  gap: 1vw;
+  display: flex;
+}
+
+.email > input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff74;
+  font-size: 1vw;
+  width: 100%;
+}
+
+.email > button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 0.5vw 1.3vw;
+  font-size: 1vw;
+}
+
+.page7-elem > h3 {
+  font-weight: 400;
+  font-size: 1.2vw;
+}
+
+.page7-box > h3 {
+  font-weight: 400;
+  font-size: 1.2vw;
+}
+
+footer {
+  height: 30vh;
+  width: 100%;
+  padding: 1.5vw;
+  display: flex;
+  align-items: end;
+}
+
+footer > h1 {
+  font-size: 1vw;
+  font-weight: 500;
 }
