@@ -119,3 +119,15 @@ t1.to(".page5-part2>h1>span", {
     // markers: true,
   },
 });
+
+t1.from(".page6-line", {
+  width: "0%",
+  stagger: 0.2,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page6-line",
+    start: "top 40%",
+    end: "bottom 0%",
+    scrub: 1,
+  },
+});
